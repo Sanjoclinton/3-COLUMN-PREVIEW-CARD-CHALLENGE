@@ -1,0 +1,118 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    color: white;
+    /* color variables */
+    --col1:hsl(31, 77%, 52%);
+    --col2:hsl(184, 100%, 22%);
+    --col3:hsl(179, 100%, 13%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+main {
+    width: 260px;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.col {
+    padding: 40px;
+}
+
+.col-1 {
+    background-color: var(--col1);
+}
+
+.col-2 {
+    background-color: var(--col2) ;
+}
+
+.col-3 {
+    background-color: var(--col3);
+}
+
+header {
+    font-size: 2rem;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.content {
+    opacity: 0.8;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+.col * {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+}
+
+#btn-1 {
+    border: 1px solid var(--col1);
+    color: var(--col1);
+}
+
+#btn-2 {
+    border: 1px solid var(--col2);
+    color: var(--col2);
+}
+
+#btn-3 {
+    border: 1px solid var(--col3);
+    color: var(--col3);
+}
+
+#btn-1:hover, #btn-2:hover, #btn-3:hover{
+    border: 1px solid white;
+    cursor: pointer;
+    color: #fff;
+}
+
+#btn-1:hover {
+    background-color: var(--col1);
+}
+
+#btn-2:hover {
+    background-color: var(--col2);
+}
+
+#btn-3:hover {
+    background-color: var(--col3);
+}
+
+
+
+/* MOBILE FIRST DESIGN */
+@media (min-width: 576px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        width: 780px;
+        display: flex;
+        flex-direction: row; 
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+}
