@@ -38,7 +38,7 @@ Active View
 
 ### Links
 
-- Live Site URL: []
+- Live Site URL: [https://sanjoclinton.github.io/3-COLUMN-PREVIEW-CARD-CHALLENGE/]
 
 
 ### Built with
